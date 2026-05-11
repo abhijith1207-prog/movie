@@ -10,7 +10,22 @@ st.set_page_config(
     layout="wide"
 )
 
+# Background Image
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://wallpaperbat.com/img/1287604-movie-theater-wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+"""
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # ---------------- CUSTOM CSS ---------------- #
+
 
 st.html("""
 <style>
@@ -41,6 +56,7 @@ body {
     color: white;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .rating {
