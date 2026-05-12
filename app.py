@@ -172,7 +172,7 @@ if search_movie:
 
 # ---------------- MAIN TITLE ---------------- #
 
-st.title("🎬 Movie Recommender System")
+st.title("🎬 Movie Recommender ")
 
 st.write(
     "Content-Based Recommendation using Machine Learning"
